@@ -22,7 +22,7 @@
     },
     "associate_pub_ip": {
       "description": "What is the name of the instance?",
-      "type": "Enum[true,false]"
+      "type": "Enum[yes,no]"
     },
     "security_groups": {
       "description": "Which Security Groups to assign",
