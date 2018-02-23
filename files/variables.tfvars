@@ -25,7 +25,7 @@ variable "instance_type" {
 }
 variable "security_groups" {
   description = "Array of security groups"
-  default     = "["sg-388fdf43"]"
+  default     = "sg-388fdf43"
 }
 #####################
 # Variables for SSH #
