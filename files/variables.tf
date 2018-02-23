@@ -7,6 +7,10 @@ variable "assoc_pub_ip" {
   description = "Associate Public IP?"
   default     = "false"
 }
+variable "subnet_id" {
+  description = "Subnet ID"
+  default     = "subnet-fdbb3198"
+}
 variable "aws_key_name" {
   description = "AWS key name"
   default     = "tommy"
