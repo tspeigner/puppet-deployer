@@ -1,7 +1,80 @@
 {
   "puppet_task_version": 1,
   "supports_noop": false,
-  "description": "A short description of this task",
+  "input_method": "stdin",
+  "description": "Puppet Task to deploy VM's or cloud instances",
   "parameters": {
+    "actions": {
+      "description": "Which action to take",
+      "type": "Enum[create,destroy,status]"
+    }, 
+    "instance_name": {
+      "description": "What is the name of the instance?",
+      "type": "Pattern[/^([a-zA-Z0-9_]+,?)+$/]"
+    },
+    "count": {
+      "description": "What is the name of the instance?",
+      "type": "Integer"
+    },
+    "key_name": {
+      "description": "What is the name of the instance?",
+      "type": "Pattern[/^ami-[a-zA-Z0-9\\_.\/\\(\\)\\-]{3,128}/]"
+    },
+    "associate_pub_ip": {
+      "description": "What is the name of the instance?",
+      "type": "Enum[true,false]"
+    },
+    "security_groups": {
+      "description": "Which Security Groups to assign",
+      "type": "Array[String]"
+    }, 
+    "subnet_id": {
+      "description": "What is the subnet to use?",
+      "type": "Array[String]"
+    },
+    "ami": {
+      "description": "The AMI to use",
+      "type": "Pattern[/^ami-[a-zA-Z\\d]{128}"
+    },
+    "install_agent": {
+      "description": "Install Puppet agent?",
+      "type": "Enum[true,false]"
+    },
+    "connection_type": {
+      "description": "Which type of connection to use (ssh, winrm)",
+      "type": "Enum[ssh,winrm]"
+    },
+    "connection_user": {
+      "description": "User for connection",
+      "type": "String[1]"
+    },
+    "connection_password": {
+      "description": "Password for connection",
+      "type": "String[1]"
+    },
+    "connection_private_key": {
+      "description": "Path to ssh key file, (e.g., /home/user/.ssh/user.pem)",
+      "type": "Pattern[^(.*\/)?(?:$|(.+?)(?:(\\.[^.]*$)|$))]"
+    }, 
+    "tag1": {
+      "description": "Instance Tag",
+      "type": "Optional[String[1]]"
+    },
+    "tag2": {
+      "description": "Instance Tag",
+      "type": "Optional[String[1]]"
+    },
+    "tag3": {
+      "description": "Instance Tag",
+      "type": "Optional[String[1]]"
+    },
+    "tag4": {
+      "description": "Instance Tag",
+      "type": "Optional[String[1]]"
+    },
+    "tag5": {
+      "description": "Instance Tag",
+      "type": "Optional[String[1]]"
+    }
   }
 }

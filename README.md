@@ -57,16 +57,26 @@ This section is where you describe how to customize, configure, and do the fancy
 
 ## Reference
 
-Users need a complete list of your module's classes, types, defined types providers, facts, and functions, along with the parameters for each. You can provide this list either via Puppet Strings code comments or as a complete list in the README Reference section.
-
-* If you are using Puppet Strings code comments, this Reference section should include Strings information so that your users know how to access your documentation.
-
-* If you are not using Puppet Strings, include a list of all of your classes, defined types, and so on, along with their parameters. Each element in this listing should include:
-
-  * The data type, if applicable.
-  * A description of what the element does.
-  * Valid values, if the data type doesn't make it obvious.
-  * Default value, if any.
+# Parameters:
+#   actions - Create, Destroy, and Status "Enum[create,destroy,status]"
+#   instance_name - What is the name of the instance(s)
+#   count - how many instances to create
+#   key_name - which AWS key name to use
+#   associate_public_ip_address - boolean
+#   security_groups - which security groups to use, array of values
+#   subnet_id - which subnet to use for networking
+#   ami - which ami to use
+#   connection_type - ssh or winrm
+#   connection_user - supply the ssh user (eg., ec2-user)
+#   connection_password - supply the ssh password
+#   connection_pkey - path to ssh private key
+#   connection_timeout - how long to wait before connection timeout
+#   install_agent - Install Puppet agent? boolean
+#   tag1 - undef, can be an alphanumeric string
+#   tag2 - undef, can be an alphanumeric string
+#   tag3 - undef, can be an alphanumeric string
+#   tag4 - undef, can be an alphanumeric string
+#   tag5 - undef, can be an alphanumeric string
 
 ## Limitations
 
