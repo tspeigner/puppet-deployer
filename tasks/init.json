@@ -38,7 +38,7 @@
     },
     "install_agent": {
       "description": "Install Puppet agent?",
-      "type": "Enum[true,false]"
+      "type": "Optional[Enum[yes,no]]"
     },
     "connection_type": {
       "description": "Which type of connection to use (ssh, winrm)",
