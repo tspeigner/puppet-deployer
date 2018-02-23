@@ -30,7 +30,7 @@
     }, 
     "subnet_id": {
       "description": "What is the subnet to use?",
-      "type": "Array[String]"
+      "type": "Pattern[/^subnet-[[a-zA-Z\\d]]"
     },
     "ami": {
       "description": "The AMI to use",
