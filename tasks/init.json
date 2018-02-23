@@ -34,7 +34,7 @@
     },
     "ami": {
       "description": "The AMI to use",
-      "type": "Pattern[/^ami-[a-zA-Z0-9_.(/)-]/]"
+      "type": "Pattern[/^ami-[a-zA-Z0-9_\.\(\/\)-]{3,128}/]"
     },
     "install_agent": {
       "description": "Install Puppet agent?",
