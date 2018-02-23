@@ -18,7 +18,7 @@
     },
     "key_name": {
       "description": "What is the name of the instance?",
-      "type": "Pattern[/^ami-[a-zA-Z0-9\\_.\/\\(\\)\\-]{3,128}/]]"
+      "type": "Pattern[/^ami-[a-zA-Z0-9/_./(/)/-]{3,128}/]]"
     },
     "associate_pub_ip": {
       "description": "What is the name of the instance?",
