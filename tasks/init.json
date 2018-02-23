@@ -54,7 +54,7 @@
     },
     "connection_private_key": {
       "description": "Path to ssh key file, (e.g., /home/user/.ssh/user.pem)",
-      "type": "Pattern[^(.*\/)?(?:$|(.+?)(?:(\\.[^.]*$)|$))]"
+      "type": "Pattern[^(.*\/)?(?:$|(.+?)(?:(.[^.]*$)|$))]"
     }, 
     "tag1": {
       "description": "Instance Tag",
