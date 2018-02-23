@@ -1,0 +1,10 @@
+what do i need to run this task?
+* install terraform
+* copy terraform deployment template - hosted on github
+* check to see if AWS credentials exist first - ~/.aws/credentials
+** if not, then ask for access key, secret key --- store in ~/.aws/credentials
+** terraform show - to validate credentials work without error message
+* What actions can you perform Enum[create(apply),destroy(destroy),status(show)]
+* Instance name should take a host name
+* Count param will take a number, but will use the instance name and iterate with a number
+* 
