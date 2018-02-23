@@ -42,19 +42,19 @@
     },
     "connection_type": {
       "description": "Which type of connection to use (ssh, winrm)",
-      "type": "Enum[ssh,winrm]"
+      "type": "Optional[Enum[ssh,winrm]]"
     },
     "connection_user": {
       "description": "User for connection",
-      "type": "String[1]"
+      "type": "Optional[String[1]]"
     },
     "connection_password": {
       "description": "Password for connection",
-      "type": "String[1]"
+      "type": "Optional[String[1]]"
     },
     "connection_private_key": {
       "description": "Path to ssh key file, (e.g., /home/user/.ssh/user.pem)",
-      "type": "Pattern[^(.*/)?(?:$|(.+?)(?:(.[^.]*$)|$))]"
+      "type": "Optional[String[1]"
     }, 
     "tag1": {
       "description": "Instance Tag",
