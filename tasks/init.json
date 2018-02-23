@@ -54,7 +54,7 @@
     },
     "connection_private_key": {
       "description": "Path to ssh key file, (e.g., /home/user/.ssh/user.pem)",
-      "type": "Optional[String[1]"
+      "type": "Optional[String[1]]"
     }, 
     "tag1": {
       "description": "Instance Tag",
