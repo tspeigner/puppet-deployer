@@ -18,7 +18,7 @@
     },
     "key_name": {
       "description": "What is the name of the instance?",
-      "type": "Pattern[/^ami-[a-zA-Z0-9/_./(/)/-]{3,128}/]]"
+      "type": "String[1]"
     },
     "associate_pub_ip": {
       "description": "What is the name of the instance?",
@@ -34,7 +34,7 @@
     },
     "ami": {
       "description": "The AMI to use",
-      "type": "Pattern[/^ami-[a-zA-Z\\d]{128}"
+      "type": "Pattern[/^ami-[a-zA-Z0-9_.(\/)-]{3,128}]"
     },
     "install_agent": {
       "description": "Install Puppet agent?",
